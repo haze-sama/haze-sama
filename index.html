@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HAZE-SAMA: Freelancer Web y Digital con soluciones futuristas para 2025. Desarrollo web, UI/UX, SEO, contenido y gráficos.">
+  <meta name="keywords" content="freelancer digital 2025, diseño moderno, desarrollo web futurista, UI/UX 2025, SEO avanzado, branding creativo">
+  <meta name="author" content="HAZE-SAMA">
+  <meta property="og:title" content="HAZE-SAMA | Freelancer Web y Digital">
+  <meta property="og:description" content="Transforma tu visión con soluciones digitales de vanguardia para 2025: desarrollo web, UI/UX, SEO y más.">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630">
+  <meta property="og:url" content="https://haze-sama.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>HAZE-SAMA | Freelancer Web y Digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "HAZE-SAMA",
+  "jobTitle": "Freelancer Web y Digital",
+  "url": "https://haze-sama.com",
+  "sameAs": [
+    "https://facebook.com/hazesama",
+    "https://instagram.com/hazesama",
+    "https://linkedin.com/in/hazesama",
+    "https://twitter.com/hazesama"
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Desarrollo Web Bronce",
+        "description": "Sitio estático de 3-5 páginas con diseño responsivo y SEO inicial."
+      },
+      "priceCurrency": "USD",
+      "price": "90-198"
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Diseño UI/UX Oro",
+        "description": "Sistema de diseño completo con componentes y pruebas de usuario."
+      },
+      "priceCurrency": "USD",
+      "price": "420-845"
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "SEO Plata",
+        "description": "Optimización de 5 páginas con 10-20 keywords."
+      },
+      "priceCurrency": "USD",
+      "price": "150-330"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="text-white sticky top-0 z-50 shadow-lg">
+    <canvas id="header-particles" class="absolute inset-0 z-0"></canvas>
+    <nav class="container mx-auto p-4 flex flex-col items-center relative z-10">
+      <div class="flex flex-col items-center mb-4">
+        <img src="https://via.placeholder.com/48" alt="Logo de HAZE-SAMA" class="w-12 h-12">
+        <h1 class="text-2xl font-extrabold">HAZE-SAMA</h1>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="hidden">
+      <label for="menu-toggle" class="md:hidden cursor-pointer">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </label>
+      <ul id="menu" class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 items-center text-base">
+        <li><a href="#home" class="hover:text-purple-400 transition active">Inicio</a></li>
+        <li><a href="#skills" class="hover:text-purple-400 transition">Habilidades</a></li>
+        <li><a href="#services" class="hover:text-purple-400 transition">Servicios</a></li>
+        <li><a href="#portfolio" class="hover:text-purple-400 transition">Portafolio</a></li>
+        <li><a href="#blog" class="hover:text-purple-400 transition">Blog</a></li>
+        <li><a href="#contact" class="hover:text-purple-400 transition">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="text-white py-32 relative">
+    <canvas id="particles" class="absolute inset-0 z-0"></canvas>
+    <div class="container mx-auto text-center px-4 z-10 relative">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Lleva Tu Visión al Cosmos Digital</h1>
+      <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Soy HAZE-SAMA, tu aliado para crear experiencias digitales futuristas en 2025: sitios web, interfaces, SEO y más.</p>
+      <a href="#contact" class="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-indigo-500 hover:to-purple-500 transition neon-blue mx-auto">¡Lánzate Hoy!</a>
+    </div>
+  </section>
+
+  <section id="skills" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">Habilidades del Futuro</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2" alt="Desarrollo Web Futurista con React" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('skill-web')" aria-label="Ver Más Desarrollo Web">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Desarrollo Web</h3>
+          <p>Sitios dinámicos con React, Vue.js y Node.js.</p>
+        </div>
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6" alt="CMS con WordPress 2025" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('skill-cms')" aria-label="Ver Más Gestión de Contenidos">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Gestión de Contenidos</h3>
+          <p>WordPress y Shopify optimizados.</p>
+        </div>
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Diseño UI/UX con Figma" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('skill-uiux')" aria-label="Ver Más Diseño UI/UX">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Diseño UI/UX</h3>
+          <p>Interfaces intuitivas con Figma.</p>
+        </div>
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356" alt="Gráficos con Illustrator" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('skill-graphic')" aria-label="Ver Más Diseño Gráfico">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Diseño Gráfico</h3>
+          <p>Logotipos y animaciones en Illustrator.</p>
+        </div>
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1590608897129-79da1d86c339" alt="SEO con Ahrefs 2025" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('skill-seo')" aria-label="Ver Más Optimización SEO">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Optimización SEO</h3>
+          <p>Estrategias SEO avanzadas.</p>
+        </div>
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Contenido para Redes" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('skill-content')" aria-label="Ver Más Creación de Contenido">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Creación de Contenido</h3>
+          <p>Artículos y videos para redes.</p>
+        </div>
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d" alt="Animaciones Web con GSAP" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclickDid you mean: "openPopup('skill-animations')" aria-label="Ver Más Animaciones Web">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Animaciones Web</h3>
+          <p>Animaciones fluidas con GSAP.</p>
+        </div>
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1551288049-b1f3a85551d5" alt="Estrategia Digital 2025" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('skill-strategy')" aria-label="Ver Más Estrategia Digital">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Estrategia Digital</h3>
+          <p>Planes de marketing digital.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-20 text-white relative">
+    <canvas id="services-particles" class="absolute inset-0 z-0"></canvas>
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-4xl font-bold text-center mb-12">Servicios para el 2025</h2>
+      <nav class="service-nav relative flex justify-center flex-wrap gap-4 mb-12 text-lg" aria-label="Selección de Servicios">
+        <a href="#service-web" class="active hover:text-purple-600 transition py-2 px-4" onclick="showService('service-web', event)">Desarrollo Web</a>
+        <a href="#service-uiux" class="hover:text-purple-600 transition py-2 px-4" onclick="showService('service-uiux', event)">Diseño UI/UX</a>
+        <a href="#service-seo" class="hover:text-purple-600 transition py-2 px-4" onclick="showService('service-seo', event)">SEO</a>
+        <a href="#service-content" class="hover:text-purple-600 transition py-2 px-4" onclick="showService('service-content', event)">Contenido</a>
+        <a href="#service-graphic" class="hover:text-purple-600 transition py-2 px-4" onclick="showService('service-graphic', event)">Diseño Gráfico</a>
+        <span class="indicator"></span>
+      </nav>
+      <div id="service-web" class="service-section mb-12 bg-white p-8 rounded-2xl shadow-lg animate-in">
+        <h3 class="text-3xl font-bold mb-6 text-indigo-600">Desarrollo Web</h3>
+        <p class="text-lg text-gray-600 mb-6">Crea una presencia online impactante con sitios rápidos, responsivos y optimizados para 2025.</p>
+        <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2" alt="Desarrollo Web Futurista 2025" class="w-full h-48 object-cover rounded-lg mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#CD7F32] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#b76e2c] transition neon-bronce" onclick="openPopup('web-bronce')" aria-label="Explorar Paquete Bronce">Explorar Bronce</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Bronce: Sitio Estático</h4>
+            <p>Lanza tu presencia con un sitio de 3-5 páginas, diseño responsivo, animaciones CSS y SEO inicial. Perfecto para startups.</p>
+            <p class="mt-4 font-semibold">Precio: $90-$198</p>
+          </div>
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#C0C0C0] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#a8a8a8] transition neon-plata" onclick="openPopup('web-plata')" aria-label="Explorar Paquete Plata">Explorar Plata</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Plata: Sitio Dinámico</h4>
+            <p>Impulsa tu marca con un sitio WordPress de 5-10 páginas, SEO avanzado y animaciones dinámicas. Ideal para blogs y negocios.</p>
+            <p class="mt-4 font-semibold">Precio: $300-$550</p>
+          </div>
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#FFD700] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#e6c200] transition neon-oro" onclick="openPopup('web-oro')" aria-label="Explorar Paquete Oro">Explorar Oro</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Oro: App Full-Stack</h4>
+            <p>Domina el mercado con una app React y Node.js, base de datos y soporte 30 días. Para proyectos ambiciosos.</p>
+            <p class="mt-4 font-semibold">Precio: $792-$1,650</p>
+          </div>
+        </div>
+      </div>
+      <div id="service-uiux" class="service-section mb-12 bg-white p-8 rounded-2xl shadow-lg hidden">
+        <h3 class="text-3xl font-bold mb-6 text-indigo-600">Diseño UI/UX</h3>
+        <p class="text-lg text-gray-600 mb-6">Interfaces intuitivas que cautivan y mejoran la experiencia del usuario en 2025.</p>
+        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d" alt="Diseño UI/UX Futurista 2025" class="w-full h-48 object-cover rounded-lg mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#CD7F32] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#b76e2c] transition neon-bronce" onclick="openPopup('uiux-bronce')" aria-label="Explorar Paquete Bronce">Explorar Bronce</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Bronce: Wireframes</h4>
+            <p>Wireframes para 3-5 pantallas en Figma. Ideal para startups que planean su 2025.</p>
+            <p class="mt-4 font-semibold">Precio: $45-$100</p>
+          </div>
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#C0C0C0] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#a8a8a8] transition neon-plata" onclick="openPopup('uiux-plata')" aria-label="Explorar Paquete Plata">Explorar Plata</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Plata: Prototipo</h4>
+            <p>Prototipo clickable de 5-10 pantallas con transiciones. Perfecto para pruebas de usuario.</p>
+            <p class="mt-4 font-semibold">Precio: $150-$275</p>
+          </div>
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#FFD700] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#e6c200] transition neon-oro" onclick="openPopup('uiux-oro')" aria-label="Explorar Paquete Oro">Explorar Oro</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Oro: Sistema de Diseño</h4>
+            <p>Guía completa con componentes y pruebas de usuario. Para proyectos escalables.</p>
+            <p class="mt-4 font-semibold">Precio: $420-$845</p>
+          </div>
+        </div>
+      </div>
+      <div id="service-seo" class="service-section mb-12 bg-white p-8 rounded-2xl shadow-lg hidden">
+        <h3 class="text-3xl font-bold mb-6 text-indigo-600">Optimización SEO</h3>
+        <p class="text-lg text-gray-600 mb-6">Eleva tu visibilidad en Google con estrategias SEO avanzadas para 2025.</p>
+        <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4" alt="SEO Avanzado 2025" class="w-full h-48 object-cover rounded-lg mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#CD7F32] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#b76e2c] transition neon-bronce" onclick="openPopup('seo-bronce')" aria-label="Explorar Paquete Bronce">Explorar Bronce</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Bronce: Auditoría</h4>
+            <p>Análisis on-page con recomendaciones claras. Ideal para sitios nuevos.</p>
+            <p class="mt-4 font-semibold">Precio: $45-$100</p>
+          </div>
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#C0C0C0] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#a8a8a8] transition neon-plata" onclick="openPopup('seo-plata')" aria-label="Explorar Paquete Plata">Explorar Plata</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Plata: Optimización</h4>
+            <p>Optimización de 5 páginas con 10-20 keywords. Perfecto para negocios en crecimiento.</p>
+            <p class="mt-4 font-semibold">Precio: $150-$330</p>
+          </div>
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#FFD700] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#e6c200] transition neon-oro" onclick="openPopup('seo-oro')" aria-label="Explorar Paquete Oro">Explorar Oro</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Oro: Estrategia</h4>
+            <p>Estrategia completa con 20+ backlinks y reportes. Para dominar tu nicho.</p>
+            <p class="mt-4 font-semibold">Precio: $440-$1,012</p>
+          </div>
+        </div>
+      </div>
+      <div id="service-content" class="service-section mb-12 bg-white p-8 rounded-2xl shadow-lg hidden">
+        <h3 class="text-3xl font-bold mb-6 text-indigo-600">Creación de Contenido</h3>
+        <p class="text-lg text-gray-600 mb-6">Contenido atractivo que conecta con tu audiencia en redes y blogs.</p>
+        <img src="https://images.unsplash.com/photo-1516321310767-83469df35643" alt="Contenido Viral 2025" class="w-full h-48 object-cover rounded-lg mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#CD7F32] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#b76e2c] transition neon-bronce" onclick="openPopup('content-bronce')" aria-label="Explorar Paquete Bronce">Explorar Bronce</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Bronce: Artículos</h4>
+            <p>Artículos SEO de 500-700 palabras con 1-2 imágenes. Ideal para blogs nuevos.</p>
+            <p class="mt-4 font-semibold">Precio: $18-$40</p>
+          </div>
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#C0C0C0] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#a8a8a8] transition neon-plata" onclick="openPopup('content-plata')" aria-label="Explorar Paquete Plata">Explorar Plata</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Plata: Multimedia</h4>
+            <p>Artículos de 1,000-1,500 palabras con infografías. Perfecto para redes.</p>
+            <p class="mt-4 font-semibold">Precio: $60-$110</p>
+          </div>
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#FFD700] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#e6c200] transition neon-oro" onclick="openPopup('content-oro')" aria-label="Explorar Paquete Oro">Explorar Oro</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Oro: Premium</h4>
+            <p>E-books o videos (3-5 min) con SEO avanzado. Para campañas de alto impacto.</p>
+            <p class="mt-4 font-semibold">Precio: $220-$506</p>
+          </div>
+        </div>
+      </div>
+      <div id="service-graphic" class="service-section mb-12 bg-white p-8 rounded-2xl shadow-lg hidden">
+        <h3 class="text-3xl font-bold mb-6 text-indigo-600">Diseño Gráfico</h3>
+        <p class="text-lg text-gray-600 mb-6">Gráficos y animaciones que hacen brillar tu marca en 2025.</p>
+        <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356" alt="Diseño Gráfico 2025" class="w-full h-48 object-cover rounded-lg mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#CD7F32] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#b76e2c] transition neon-bronce" onclick="openPopup('graphic-bronce')" aria-label="Explorar Paquete Bronce">Explorar Bronce</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Bronce: Gráficos</h4>
+            <p>5-7 gráficos para redes sociales. Ideal para campañas rápidas.</p>
+            <p class="mt-4 font-semibold">Precio: $27-$60</p>
+          </div>
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#C0C0C0] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#a8a8a8] transition neon-plata" onclick="openPopup('graphic-plata')" aria-label="Explorar Paquete Plata">Explorar Plata</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Plata: Branding</h4>
+            <p>Logotipo, paleta y plantillas. Perfecto para startups.</p>
+            <p class="mt-4 font-semibold">Precio: $100-$220</p>
+          </div>
+          <div class="card p-6">
+            <button class="block mx-auto mb-4 bg-[#FFD700] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#e6c200] transition neon-oro" onclick="openPopup('graphic-oro')" aria-label="Explorar Paquete Oro">Explorar Oro</button>
+            <h4 class="text-xl font-bold mb-2 text-gray-900">Oro: Ilustraciones</h4>
+            <p>Ilustraciones o animaciones (30-60s). Para marcas premium.</p>
+            <p class="mt-4 font-semibold">Precio: $330-$759</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Portafolio</h2>
+      <nav class="portfolio-nav relative flex justify-center flex-wrap gap-4 mb-12 text-lg" aria-label="Selección de Portafolio">
+        <a href="#portfolio-web" class="active hover:text-purple-600 transition py-2 px-4" onclick="showPortfolio('portfolio-web', event)">Web</a>
+        <a href="#portfolio-uiux" class="hover:text-purple-600 transition py-2 px-4" onclick="showPortfolio('portfolio-uiux', event)">UI/UX</a>
+        <a href="#portfolio-graphic" class="hover:text-purple-600 transition py-2 px-4" onclick="showPortfolio('portfolio-graphic', event)">Gráficos</a>
+        <span class="indicator"></span>
+      </nav>
+      <div id="portfolio-web" class="portfolio-section mb-12 animate-in">
+        <div class="carousel">
+          <div class="card p-6">
+            <div class="relative">
+              <img src="https://via.placeholder.com/300x200" alt="Sitio Corporativo WordPress 2025" class="w-full h-48 object-cover rounded-lg">
+              <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('portfolio-web-1')" aria-label="Ver Detalles Sitio Corporativo">Ver Detalles</button>
+            </div>
+            <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Sitio Corporativo</h3>
+            <p>WordPress con SEO avanzado.</p>
+          </div>
+          <div class="card p-6">
+            <div class="relative">
+              <img src="https://via.placeholder.com/300x200" alt="E-Commerce Shopify 2025" class="w-full h-48 object-cover rounded-lg">
+              <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('portfolio-web-2')" aria-label="Ver Detalles E-Commerce">Ver Detalles</button>
+            </div>
+            <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">E-Commerce</h3>
+            <p>Tienda Shopify personalizada.</p>
+          </div>
+          <div class="card p-6">
+            <div class="relative">
+              <img src="https://via.placeholder.com/300x200" alt="App React 2025" class="w-full h-48 object-cover rounded-lg">
+              <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('portfolio-web-3')" aria-label="Ver Detalles App React">Ver Detalles</button>
+            </div>
+            <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">App React</h3>
+            <p>Aplicación full-stack.</p>
+          </div>
+        </div>
+        <div class="carousel-nav flex justify-center gap-4 mt-6">
+          <button onclick="scrollCarousel('portfolio-web', -300)" aria-label="Anterior"><</button>
+          <button onclick="scrollCarousel('portfolio-web', 300)" aria-label="Siguiente">></button>
+        </div>
+      </div>
+      <div id="portfolio-uiux" class="portfolio-section mb-12 hidden">
+        <div class="carousel">
+          <div class="card p-6">
+            <div class="relative">
+              <img src="https://via.placeholder.com/300x200" alt="Prototipo App F Lambada 2025" class="w-full h-48 object-cover rounded-lg">
+              <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('portfolio-uiux-1')" aria-label="Ver Detalles Prototipo App">Ver Detalles</button>
+            </div>
+            <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Prototipo App</h3>
+            <p>Prototipo Figma para fitness.</p>
+          </div>
+          <div class="card p-6">
+            <div class="relative">
+              <img src="https://via.placeholder.com/300x200" alt="Sistema de Diseño 2025" class="w-full h-48 object-cover rounded-lg">
+              <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('portfolio-uiux-2')" aria-label="Ver Detalles Sistema de Diseño">Ver Detalles</button>
+            </div>
+            <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Sistema de Diseño</h3>
+            <p>Guía UI/UX completa.</p>
+          </div>
+          <div class="card p-6">
+            <div class="relative">
+              <img src="https://via.placeholder.com/300x200" alt="Wireframes E-Commerce 2025" class="w-full h-48 object-cover rounded-lg">
+              <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('portfolio-uiux-3')" aria-label="Ver Detalles Wireframes">Ver Detalles</button>
+            </div>
+            <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Wireframes</h3>
+            <p>Wireframes para e-commerce.</p>
+          </div>
+        </div>
+        <div class="carousel-nav flex justify-center gap-4 mt-6">
+          <button onclick="scrollCarousel('portfolio-uiux', -300)" aria-label="Anterior"><</button>
+          <button onclick="scrollCarousel('portfolio-uiux', 300)" aria-label="Siguiente">></button>
+        </div>
+      </div>
+      <div id="portfolio-graphic" class="portfolio-section mb-12 hidden">
+        <div class="carousel">
+          <div class="card p-6">
+            <div class="relative">
+              <img src="https://via.placeholder.com/300x200" alt="Branding Restaurante 2025" class="w-full h-48 object-cover rounded-lg">
+              <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('portfolio-graphic-1')" aria-label="Ver Detalles Branding Restaurante">Ver Detalles</button>
+            </div>
+            <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Branding Restaurante</h3>
+            <p>Logotipo y gráficos.</p>
+          </div>
+          <div class="card p-6">
+            <div class="relative">
+              <img src="https://via.placeholder.com/300x200" alt="Animación Publicitaria 2025" class="w-full h-48 object-cover rounded-lg">
+              <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('portfolio-graphic-2')" aria-label="Ver Detalles Animación">Ver Detalles</button>
+            </div>
+            <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Animación</h3>
+            <p>Video animado 30s.</p>
+          </div>
+          <div class="card p-6">
+            <div class="relative">
+              <img src="https://via.placeholder.com/300x200" alt="Gráficos Sociales 2025" class="w-full h-48 object-cover rounded-lg">
+              <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('portfolio-graphic-3')" aria-label="Ver Detalles Gráficos Sociales">Ver Detalles</button>
+            </div>
+            <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Gráficos Sociales</h3>
+            <p>Posters para Instagram.</p>
+          </div>
+        </div>
+        <div class="carousel-nav flex justify-center gap-4 mt-6">
+          <button onclick="scrollCarousel('portfolio-graphic', -300)" aria-label="Anterior"><</button>
+          <button onclick="scrollCarousel('portfolio-graphic', 300)" aria-label="Siguiente">></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Blog</h2>
+      <div class="carousel">
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2" alt="Trucos para Sitios Web Rápidos 2025" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('blog-1')" aria-label="Ver Más Trucos Web">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">5 Trucos para un Sitio Web Rápido</h3>
+          <p>Optimiza con Lighthouse.</p>
+        </div>
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4" alt="Guía SEO Startups 2025" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('blog-2')" aria-label="Ver Más Guía SEO">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Guía Básica de SEO</h3>
+          <p>Estrategias para Google.</p>
+        </div>
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d" alt="Errores Diseño UI 2025" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('blog-3')" aria-label="Ver Más Diseño UI">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Errores UI a Evitar</h3>
+          <p>Consejos para interfaces.</p>
+        </div>
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1617040619263-41c68480a91a" alt="Tendencias Diseño 2025" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('blog-4')" aria-label="Ver Más Tendencias Diseño">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Tendencias Diseño</h3>
+          <p>Lo nuevo para 2025.</p>
+        </div>
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1516321310767-83469df35643" alt="Optimización Mobile 2025" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('blog-5')" aria-label="Ver Más Optimización Mobile">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Optimización Mobile</h3>
+          <p>Mejora la experiencia.</p>
+        </div>
+        <div class="card p-6">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1551288049-b1f3a85551d5" alt="Estrategias Redes 2025" class="w-full h-48 object-cover rounded-lg">
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" onclick="openPopup('blog-6')" aria-label="Ver Más Estrategias Redes">Ver Más</button>
+          </div>
+          <h3 class="text-xl font-semibold mt-4 mb-2 text-indigo-600">Estrategias Redes</h3>
+          <p>Conecta con tu audiencia.</p>
+        </div>
+      </div>
+      <div class="carousel-nav flex justify-center gap-4 mt-6">
+        <button onclick="scrollCarousel('blog', -300)" aria-label="Anterior"><</button>
+        <button onclick="scrollCarousel('blog', 300)" aria-label="Siguiente">></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 text-white relative">
+    <canvas id="contact-particles" class="absolute inset-0 z-0"></canvas>
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-4xl font-bold text-center mb-16">¡Convierte Tu Visión en Realidad!</h2>
+      <form class="max-w-lg mx-auto bg-gray-50 p-8 rounded-2xl shadow-lg">
+        <div class="mb-6">
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Nombre</label>
+          <input type="text" id="name" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-indigo-600 transition" required>
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+          <input type="email" id="email" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-indigo-600 transition" required>
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block text-gray-700 font-semibold mb-2">Mensaje</label>
+          <textarea id="message" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-indigo-600 transition" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="block mx-auto bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition neon-blue" aria-label="Enviar Mensaje">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+<footer class="text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <div class="flex flex-col items-center mb-4">
+        <img src="https://via.placeholder.com/48" alt="Logo de HAZE-SAMA" class="w-12 h-12 mb-2">
+        <h3 class="text-xl font-bold">HAZE-SAMA</h3>
+      </div>
+      <p class="mb-6 text-base">Freelancer Web y Digital | Soluciones futuristas para 2025.</p>
+      <div class="flex justify-center space-x-4 mb-6 text-base">
+        <a href="#" class="hover:text-purple-400 transition">Facebook</a>
+        <a href="#" class="hover:text-purple-400 transition">Instagram</a>
+        <a href="#" class="hover:text-purple-400 transition">LinkedIn</a>
+        <a href="#" class="hover:text-purple-400 transition">Twitter</a>
+      </div>
+      <p class="text-sm text-gray-400">© 2025 HAZE-SAMA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <div id="skill-web" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Desarrollo Web</h3>
+      <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2" alt="Desarrollo Web Futurista con React" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Creo sitios dinámicos con React, Vue.js, Node.js y bases de datos en la nube. Perfectos para startups y negocios que buscan rapidez y escalabilidad.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="skill-cms" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Gestión de Contenidos</h3>
+      <img src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6" alt="CMS con WordPress 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Optimizo WordPress y Shopify para sitios rápidos, personalizados y fáciles de gestionar. Ideal para blogs y e-commerce.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="skill-uiux" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Diseño UI/UX</h3>
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Diseño UI/UX con Figma" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Diseño interfaces intuitivas con Figma, enfocadas en usabilidad y estética moderna. Perfectas para apps y sitios.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="skill-graphic" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Diseño Gráfico</h3>
+      <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356" alt="Gráficos con Illustrator" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Creo logotipos, gráficos y animaciones con Illustrator y After Effects para destacar tu marca.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="skill-seo" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Optimización SEO</h3>
+      <img src="https://images.unsplash.com/photo-1590608897129-79da1d86c339" alt="SEO con Ahrefs 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Mejoro tu visibilidad con estrategias SEO avanzadas, keywords y backlinks. Ideal para dominar Google.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="skill-content" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Creación de Contenido</h3>
+      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Contenido para Redes" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Produzco artículos, videos y gráficos para conectar con tu audiencia en redes y blogs.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="skill-animations" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Animaciones Web</h3>
+      <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d" alt="Animaciones Web con GSAP" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Creo animaciones fluidas con GSAP y CSS para experiencias web inmersivas.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="skill-strategy" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Estrategia Digital</h3>
+      <img src="https://images.unsplash.com/photo-1551288049-b1f3a85551d5" alt="Estrategia Digital 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Desarrollo planes de marketing digital para maximizar tu alcance y conversiones.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+
+  <div id="web-bronce" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Sitio Web Estático Básico (Bronce)</h3>
+      <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2" alt="Sitio Web Estático Bronce 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Lanza tu presencia online con un sitio estático de 3-5 páginas, diseño responsivo, animaciones CSS y SEO inicial. Perfecto para startups.</p>
+      <p><strong>Entrega:</strong> Código en GitHub, despliegue en Netlify, video tutorial.</p>
+      <p><strong>Precio:</strong> $90-$198.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="web-plata" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Sitio Web Dinámico con CMS (Plata)</h3>
+      <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2" alt="Sitio Web Dinámico Plata 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Impulsa tu marca con un sitio WordPress de 5-10 páginas, tema personalizado, SEO avanzado y animaciones GSAP. Ideal para blogs y negocios.</p>
+      <p><strong>Entrega:</strong> Acceso CMS, archivos en Google Drive, documentación PDF.</p>
+      <p><strong>Precio:</strong> $300-$550.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="web-oro" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Aplicación Web Full-Stack (Oro)</h3>
+      <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2" alt="App Web Oro 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Domina el mercado con una app React y Node.js, base de datos, autenticación JWT y soporte 30 días. Para proyectos ambiciosos.</p>
+      <p><strong>Entrega:</strong> Código en GitHub, despliegue en AWS, documentación API.</p>
+      <p><strong>Precio:</strong> $792-$1,650.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="uiux-bronce" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-boldilane">Wireframes UI/UX (Bronce)</h3>
+      <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d" alt="Wireframes UI/UX Bronce 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Wireframes estáticos para 3-5 pantallas en Figma. Ideal para startups que planean su app.</p>
+      <p><strong>Entrega:</strong> Archivos Figma, exportaciones PNG/PDF.</p>
+      <p><strong>Precio:</strong> $45-$100.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="uiux-plata" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Prototipo UI/UX (Plata)</h3>
+      <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d" alt="Prototipo UI/UX Plata 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Prototipo clickable de 5-10 pantallas con transiciones suaves. Perfecto para pruebas de usuario y validación.</p>
+      <p><strong>Entrega:</strong> Enlace Figma, exportaciones PNG/SVG, video explicativo.</p>
+      <p><strong>Precio:</strong> $150-$275.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="uiux-oro" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Sistema de Diseño UI/UX (Oro)</h3>
+      <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d" alt="Sistema de Diseño UI/UX Oro 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Guía completa con componentes reutilizables, paleta de colores y pruebas de usuario. Ideal para proyectos escalables.</p>
+      <p><strong>Entrega:</strong> Archivos Figma, documentación PDF, soporte 15 días.</p>
+      <p><strong>Precio:</strong> $420-$845.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="seo-bronce" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Auditoría SEO (Bronce)</h3>
+      <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4" alt="Auditoría SEO Bronce 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Análisis on-page detallado con recomendaciones accionables. Ideal para sitios nuevos o pequeños.</p>
+      <p><strong>Entrega:</strong> Informe PDF, lista de keywords, plan de acción.</p>
+      <p><strong>Precio:</strong> $45-$100.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="seo-plata" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Optimización SEO (Plata)</h3>
+      <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4" alt="Optimización SEO Plata 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Optimización de 5 páginas con 10-20 keywords, incluyendo metaetiquetas y enlaces internos. Perfecto para negocios en crecimiento.</p>
+      <p><strong>Entrega:</strong> Informe PDF, optimización implementada, reporte inicial.</p>
+      <p><strong>Precio:</strong> $150-$330.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="seo-oro" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Estrategia SEO Completa (Oro)</h3>
+      <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4" alt="Estrategia SEO Oro 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Estrategia avanzada con 20+ backlinks de calidad, auditoría completa y reportes mensuales. Para dominar tu nicho en Google.</p>
+      <p><strong>Entrega:</strong> Plan SEO, backlinks, reportes mensuales, soporte 30 días.</p>
+      <p><strong>Precio:</strong> $440-$1,012.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="content-bronce" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Artículos SEO (Bronce)</h3>
+      <img src="https://images.unsplash.com/photo-1516321310767-83469df35643" alt="Artículos SEO Bronce 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Artículos optimizados de 500-700 palabras con 1-2 imágenes. Ideal para blogs nuevos o redes sociales.</p>
+      <p><strong>Entrega:</strong> Documento Word, imágenes editadas, publicación opcional.</p>
+      <p><strong>Precio:</strong> $18-$40.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="content-plata" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Contenido Multimedia (Plata)</h3>
+      <img src="https://images.unsplash.com/photo-1516321310767-83469df35643" alt="Contenido Multimedia Plata 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Artículos de 1,000-1,500 palabras con infografías o gráficos personalizados. Perfecto para redes y blogs establecidos.</p>
+      <p><strong>Entrega:</strong> Documento Word, gráficos PNG/SVG, publicación opcional.</p>
+      <p><strong>Precio:</strong> $60-$110.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="content-oro" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Contenido Premium (Oro)</h3>
+      <img src="https://images.unsplash.com/photo-1516321310767-83469df35643" alt="Contenido Premium Oro 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>E-books de 10-20 páginas o videos editados (3-5 min) con SEO avanzado. Ideal para campañas de alto impacto.</p>
+      <p><strong>Entrega:</strong> PDF o MP4, archivos fuente, publicación opcional.</p>
+      <p><strong>Precio:</strong> $220-$506.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="graphic-bronce" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Gráficos para Redes (Bronce)</h3>
+      <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356" alt="Gráficos Redes Bronce 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>5-7 gráficos optimizados para redes sociales (Instagram, Twitter). Ideal para campañas rápidas.</p>
+      <p><strong>Entrega:</strong> Archivos PNG/JPG, editable en Canva.</p>
+      <p><strong>Precio:</strong> $27-$60.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="graphic-plata" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Branding Básico (Plata)</h3>
+      <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356" alt="Branding Plata 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Logotipo, paleta de colores y plantillas para redes o presentaciones. Perfecto para startups en crecimiento.</p>
+      <p><strong>Entrega:</strong> Archivos AI/PNG, guía de marca PDF.</p>
+      <p><strong>Precio:</strong> $100-$220.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="graphic-oro" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Ilustraciones y Animaciones (Oro)</h3>
+      <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356" alt="Ilustraciones Oro 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Ilustraciones personalizadas o animaciones (30-60s) para campañas premium. Ideal para marcas establecidas.</p>
+      <p><strong>Entrega:</strong> Archivos AI/MP4, editable en After Effects, guía de uso.</p>
+      <p><strong>Precio:</strong> $330-$759.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+
+  <div id="portfolio-web-1" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Sitio Corporativo</h3>
+      <img src="https://via.placeholder.com/300x200" alt="Sitio Corporativo WordPress 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Sitio WordPress para una empresa de consultoría, con SEO avanzado y diseño responsivo.</p>
+      <p><strong>Tecnologías:</strong> WordPress, Elementor, Yoast SEO.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="portfolio-web-2" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">E-Commerce</h3>
+      <img src="https://via.placeholder.com/300x200" alt="E-Commerce Shopify 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Tienda Shopify personalizada con integración de pagos y optimización SEO.</p>
+      <p><strong>Tecnologías:</strong> Shopify, Oberlo, Google Analytics.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="portfolio-web-3" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">App React</h3>
+      <img src="https://via.placeholder.com/300x200" alt="App React 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Aplicación full-stack con React, Node.js y MongoDB para gestión de proyectos.</p>
+      <p><strong>Tecnologías:</strong> React, Node.js, MongoDB, JWT.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="portfolio-uiux-1" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Prototipo App</h3>
+      <img src="https://via.placeholder.com/300x200" alt="Prototipo App Figma 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Prototipo clickable en Figma para una app de fitness con transiciones suaves.</p>
+      <p><strong>Herramientas:</strong> Figma, Adobe XD.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="portfolio-uiux-2" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Sistema de Diseño</h3>
+      <img src="https://via.placeholder.com/300x200" alt="Sistema de Diseño 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Guía UI/UX completa con componentes reutilizables para una startup tech.</p>
+      <p><strong>Herramientas:</strong> Figma, Sketch.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="portfolio-uiux-3" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Wireframes</h3>
+      <img src="https://via.placeholder.com/300x200" alt="Wireframes E-Commerce 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Wireframes para un e-commerce con enfoque en usabilidad móvil.</p>
+      <p><strong>Herramientas:</strong> Figma, Balsamiq.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="portfolio-graphic-1" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Branding Restaurante</h3>
+      <img src="https://via.placeholder.com/300x200" alt="Branding Restaurante 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Logotipo y gráficos para un restaurante moderno con estética minimalista.</p>
+      <p><strong>Herramientas:</strong> Illustrator, Photoshop.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="portfolio-graphic-2" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Animación</h3>
+      <img src="https://via.placeholder.com/300x200" alt="Animación Publicitaria 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Video animado de 30 segundos para una campaña publicitaria.</p>
+      <p><strong>Herramientas:</strong> After Effects, Premiere Pro.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="portfolio-graphic-3" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Gráficos Sociales</h3>
+      <img src="https://via.placeholder.com/300x200" alt="Gráficos Sociales 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Posters optimizados para Instagram y Twitter para una marca de moda.</p>
+      <p><strong>Herramientas:</strong> Canva, Photoshop.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+
+  <div id="blog-1" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">5 Trucos para un Sitio Web Rápido</h3>
+      <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2" alt="Trucos para Sitios Web Rápidos 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Consejos prácticos para optimizar tu sitio con Lighthouse y mejorar la velocidad de carga.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="blog-2" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Guía Básica de SEO</h3>
+      <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4" alt="Guía SEO Startups 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Estrategias esenciales para posicionarte en Google en 2025.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="blog-3" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Errores UI a Evitar</h3>
+      <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d" alt="Errores Diseño UI 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Los errores comunes en diseño UI y cómo solucionarlos.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="blog-4" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Tendencias Diseño</h3>
+      <img src="https://images.unsplash.com/photo-1617040619263-41c68480a91a" alt="Tendencias Diseño 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Lo que dominará el diseño gráfico y web en 2025.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="blog-5" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Optimización Mobile</h3>
+      <img src="https://images.unsplash.com/photo-1516321310767-83469df35643" alt="Optimización Mobile 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Mejora la experiencia de usuario en dispositivos móviles.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
+  <div id="blog-6" class="popup-overlay">
+    <div class="popup-content">
+      <h3 class="text-2xl font-bold mb-4">Estrategias Redes</h3>
+      <img src="https://images.unsplash.com/photo-1551288049-b1f3a85551d5" alt="Estrategias Redes 2025" class="w-full h-64 object-cover rounded-lg mb-4">
+      <p>Técnicas para conectar con tu audiencia en redes sociales.</p>
+      <button class="mt-4 bg-[#34d399] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#2bb574] transition neon-blue" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Cerrar">Cerrar</button>
+    </div>
+  </div>
